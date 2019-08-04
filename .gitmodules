@@ -1,0 +1,6 @@
+[submodule "freja-frontend"]
+	path = freja-frontend
+	url = https://github.com/ibara1454/freja-frontend
+[submodule "freja-backend"]
+	path = freja-backend
+	url = https://github.com/ibara1454/freja-backend

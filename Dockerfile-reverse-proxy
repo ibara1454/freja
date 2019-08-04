@@ -1,0 +1,6 @@
+FROM nginx:1.17.2-alpine
+LABEL maintainer "Ibara Takanashi <ibara1454@gmail.com>"
+
+COPY reverse-proxy/nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 80

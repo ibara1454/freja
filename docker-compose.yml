@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile-frontend
+    ports:
+      - "8080:8080" # Open 8080 for http server
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile-backend
+    ports:
+      - "3000:3000" # Open 3000 for setting rules
+      - "8001:8001" # Open 8001 for proxy port
+      - "8002:8002" # Open 8002 for monitor page
+
+  reverse-proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile-reverse-proxy
+    ports:
+      - 80:80       # Reverse proxying requests on port 80
