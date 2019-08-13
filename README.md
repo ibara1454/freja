@@ -1,4 +1,4 @@
-# Freja - proxy server for testing
+# Freja - proxy server for test
 
 ## Introduction
 
